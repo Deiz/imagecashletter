@@ -294,6 +294,8 @@ func (v *validator) isReturnAcceptanceIndicator(code string) error {
 func (v *validator) isMICRValidIndicator(code int) error {
 	switch code {
 	case
+		// Absent
+		0,
 		// Good read
 		1,
 		// Good read, missing field
